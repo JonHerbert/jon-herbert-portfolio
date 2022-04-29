@@ -1,30 +1,66 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <TopMenu />
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" :key="$route.path" />
+    </transition>
+  </router-view>
 </template>
 
+<script>
+import TopMenu from "@/components/TopMenu.vue"
+
+export default {
+  components: {
+    TopMenu
+  }
+}
+</script>
+
 <style lang="scss">
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: var(--surface-section);
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Fira Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--text-color);
 }
 
-#nav {
-  padding: 30px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: "Expletus Sans", cursive;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+p {
+  font-family: "Fira Mono", monospace;
+  color: var(--text-color);
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.p-button {
+  border-radius: 0 !important;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
 }
 </style>
