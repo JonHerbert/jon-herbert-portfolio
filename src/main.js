@@ -6,6 +6,7 @@ import store from "./store";
 
 import PrimeVue from 'primevue/config';
 import Button from 'primevue/button';
+import Divider from 'primevue/divider';
 
 import '/node_modules/primeflex/primeflex.css';
 import 'primevue/resources/themes/lara-dark-teal/theme.css';
@@ -18,5 +19,6 @@ app.use(router);
 app.use(PrimeVue, { inputStyle: 'filled' }, { ripple: true });
 
 app.component('Button', Button);
+app.component('Divider', Divider);
 
 app.mount("#app");

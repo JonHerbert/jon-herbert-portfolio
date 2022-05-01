@@ -3,7 +3,9 @@
     class="grid grid-nogutter text-800"
     :style="{ backgroundColor: panelColor }"
   >
-    <div class="col-12 p-6 text-center md:text-left flex align-items-center">
+    <div
+      class="col-12 px-6 py-8 text-center md:text-left flex align-items-center"
+    >
       <section>
         <span class="block text-6xl font-bold mb-1 title">{{ title }}</span>
         <div

@@ -35,7 +35,7 @@
         ></Button>
       </section>
     </div>
-    <div class="col-12 md:col-6 overflow-hidden object-fit">
+    <div class="col-12 md:col-6 overflow-hidden object-fit flex h-full">
       <img
         :src="require(`@/assets/images/${image}`)"
         alt="Image"
