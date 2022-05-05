@@ -44,6 +44,11 @@ export default {
         icon: 'pi pi-fw pi-at'
       },
       {
+        label: "Portfolio",
+        to: "/portfolio",
+        icon: 'pi pi-fw pi-th-large'
+      },
+      {
         label: "Blog",
         to: "/blog",
         icon: 'pi pi-fw pi-book'
