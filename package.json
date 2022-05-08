@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@neeravp/vue-3-animate-in-view": "^1.0.1",
     "@sanity/client": "^3.3.0",
     "@sanity/image-url": "^1.0.1",
     "core-js": "^3.6.5",

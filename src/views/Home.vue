@@ -91,144 +91,117 @@
       <FullPanel :title="cms.title" :panel-color="cms.panelColor">
         <template #content>
           <div class="flex flex-column xl:flex-row">
-            <div
-              class="
-                flex-1
-                justify-content-center
-                p-4
-                m-2
-                surface-card
-                shadow-2
-                border-round
-                text-left
-              "
-            >
-              <a href="https://www.sanity.io/"
-                ><img
-                  src="@/assets/icons/sanity.svg"
-                  style="width: 200px"
-                  alt=""
-                  class="lang-icon-3 p-2"
-                />
-              </a>
-              <div class="font-medium text-500 mb-3">
-                <p>
-                  Sanity.io is a fantastic 'Headless' Content Management System
-                  designed to be customized and extended entirely by the
-                  developers using it. This means that as an independent
-                  developer, I am able to create a system designed directly for
-                  the client; adding or removing, as needed, components that
-                  make updating or editing your website as easy as possible.
-                </p>
-                <p>
-                  'Headless' refers to the idea that the content added and made
-                  by any of your designers, developers, content creators or
-                  yourself can be presented in any way you like. For example, if
-                  you had two online shops but wanted one place where you could
-                  add, edit or remove products, this would be possible as each
-                  store could just retrieve the content it needed from your
-                  product database. Another example would be if you had an old
-                  site that needed to be updated to a more modern, repsonsive
-                  architecture, your content would not need to be changed to fit
-                  into the new system. Instead, you can choose what your
-                  front-end would be (there are lots of choices!) and simply
-                  serve your content from Sanity!
-                </p>
-                <p>
-                  AS they put it: "We designed Sanity to free organizations from
-                  the trappings of typical content management systems (CMS) that
-                  force you to think of your content in the context of web pages
-                  and content hierarchies."
-                </p>
-              </div>
-            </div>
-            <div
-              class="
-                flex-1
-                justify-content-center
-                surface-card
-                p-4
-                m-2
-                shadow-2
-                border-round
-                text-left
-              "
-            >
-              <a href="https://wordpress.org/"
-                ><img
-                  src="@/assets/icons/WordPress_blue_logo.svg"
-                  style="width: 200px"
-                  alt=""
-                  class="lang-icon-3 p-2"
-              /></a>
-              <div class="font-medium text-500 mb-3">
-                <p>
-                  Wordpress is the most popular and used CMS in the world. It's
-                  been around for around 20 years and has a lot of support,
-                  plugins and features.
-                </p>
-                <p>
-                  Whilst it is popular, I find it to be a bit overkill for a lot
-                  of clients. It can also be a bit complicated to use for some
-                  people.
-                </p>
-                <p>
-                  Personally, I feel that Sanity is more modern and extensible
-                  and comes without all of the cumbersome and mostly uneeded
-                  modules that have built up over the years with Wordpress,
-                  allowing developers and their clients an easier workflow.
-                </p>
-              </div>
-            </div>
-            <div
-              class="
-                flex-1
-                justify-content-center
-                surface-card
-                p-4
-                m-2
-                shadow-2
-                border-round
-                text-left
-              "
-            >
-              <a href="https://www.toolkitwebsites.co.uk/"
-                ><img
-                  src="@/assets/icons/toolkit-webdesign.svg"
-                  style="width: 300px"
-                  alt=""
-                  class="lang-icon-3 p-2"
-              /></a>
-              <div class="font-medium text-500 mb-3">
-                <p>
-                  Toolkit Websites was founded around 20 years ago and has a
-                  bespoke CMS called The Toolkit. Unlike Sanity and Wordpress it
-                  is proprietary rather than open source. Meaning, when you buy
-                  a website with Toolkit you get phone support, hosting, domain,
-                  design and everything that a small business needs in a single
-                  package.
-                </p>
-                <p>
-                  Having worked for Toolkit for several years I can attest to
-                  their work ethic and the pride they take in creating and
-                  maintaining good websites. They continuously work on upgrading
-                  The Toolkit to make sure it remains modern and that all of
-                  their websites are easy to use for both the client and the
-                  end-user. They have recently added the ability to create
-                  e-commerce sites opening up a whole new avenue for clients to
-                  capitalize on their web traffic.
-                </p>
-                <p>
-                  I may be biased as the majority of my portfolio comes from
-                  working on Toolkit websites over the last few years, but I
-                  would recommend them to any client that would benefit from
-                  ongoing support and require medium to large websites.
-                </p>
-              </div>
-            </div>
+            <Card>
+              <template #card-content>
+                <a href="https://www.sanity.io/"
+                  ><img
+                    src="@/assets/icons/sanity.svg"
+                    style="width: 200px"
+                    alt=""
+                    class="lang-icon-3 p-2"
+                  />
+                </a>
+                <div class="font-medium text-500 mb-3">
+                  <p>
+                    Sanity.io is a fantastic 'Headless' Content Management
+                    System designed to be customized and extended entirely by
+                    the developers using it. This means that as an independent
+                    developer, I am able to create a system designed directly
+                    for the client; adding or removing, as needed, components
+                    that make updating or editing your website as easy as
+                    possible.
+                  </p>
+                  <p>
+                    'Headless' refers to the idea that the content added and
+                    made by any of your designers, developers, content creators
+                    or yourself can be presented in any way you like. For
+                    example, if you had two online shops but wanted one place
+                    where you could add, edit or remove products, this would be
+                    possible as each store could just retrieve the content it
+                    needed from your product database. Another example would be
+                    if you had an old site that needed to be updated to a more
+                    modern, repsonsive architecture, your content would not need
+                    to be changed to fit into the new system. Instead, you can
+                    choose what your front-end would be (there are lots of
+                    choices!) and simply serve your content from Sanity!
+                  </p>
+                  <p>
+                    AS they put it: "We designed Sanity to free organizations
+                    from the trappings of typical content management systems
+                    (CMS) that force you to think of your content in the context
+                    of web pages and content hierarchies."
+                  </p>
+                </div>
+              </template>
+            </Card>
+            <Card>
+              <template #card-content>
+                <a href="https://wordpress.org/"
+                  ><img
+                    src="@/assets/icons/WordPress_blue_logo.svg"
+                    style="width: 200px"
+                    alt=""
+                    class="lang-icon-3 p-2"
+                /></a>
+                <div class="font-medium text-500 mb-3">
+                  <p>
+                    Wordpress is the most popular and used CMS in the world.
+                    It's been around for around 20 years and has a lot of
+                    support, plugins and features.
+                  </p>
+                  <p>
+                    Whilst it is popular, I find it to be a bit overkill for a
+                    lot of clients. It can also be a bit complicated to use for
+                    some people.
+                  </p>
+                  <p>
+                    Personally, I feel that Sanity is more modern and extensible
+                    and comes without all of the cumbersome and mostly uneeded
+                    modules that have built up over the years with Wordpress,
+                    allowing developers and their clients an easier workflow.
+                  </p>
+                </div>
+              </template>
+            </Card>
+            <Card v-animate-inview="'fade'">
+              <template #card-content>
+                <a href="https://www.toolkitwebsites.co.uk/"
+                  ><img
+                    src="@/assets/icons/toolkit-webdesign.svg"
+                    style="width: 300px"
+                    alt=""
+                    class="lang-icon-3 p-2"
+                /></a>
+                <div class="font-medium text-500 mb-3">
+                  <p>
+                    Toolkit Websites was founded around 20 years ago and has a
+                    bespoke CMS called The Toolkit. Unlike Sanity and Wordpress
+                    it is proprietary rather than open source. Meaning, when you
+                    buy a website with Toolkit you get phone support, hosting,
+                    domain, design and everything that a small business needs in
+                    a single package.
+                  </p>
+                  <p>
+                    Having worked for Toolkit for several years I can attest to
+                    their work ethic and the pride they take in creating and
+                    maintaining good websites. They continuously work on
+                    upgrading The Toolkit to make sure it remains modern and
+                    that all of their websites are easy to use for both the
+                    client and the end-user. They have recently added the
+                    ability to create e-commerce sites opening up a whole new
+                    avenue for clients to capitalize on their web traffic.
+                  </p>
+                  <p>
+                    I may be biased as the majority of my portfolio comes from
+                    working on Toolkit websites over the last few years, but I
+                    would recommend them to any client that would benefit from
+                    ongoing support and require medium to large websites.
+                  </p>
+                </div>
+              </template>
+            </Card>
           </div>
         </template>
-        <template #icons> </template>
       </FullPanel>
     </section>
     <section>
@@ -310,14 +283,16 @@
 </template>
 
 <script>
+import { ref } from 'vue'
 import Hero from '@/components/Hero'
 import FullPanel from '@/components/FullPanel'
 import Footer from '@/components/Footer'
+import Card from '@/components/Card'
 
 export default {
   name: "Home",
   components: {
-    Hero, FullPanel, Footer
+    Hero, FullPanel, Footer, Card
   },
   setup() {
     return { 
@@ -346,7 +321,7 @@ export default {
       pro: {
         title: 'Project Management',
         panelColor: "var(--surface-a)"
-      }
+      },
     }
   }
 }
@@ -364,5 +339,14 @@ export default {
 }
 .lang-icon-3 {
   filter: brightness(0) invert(1);
+}
+.fade {
+  animation: fade 1s ease forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 0.25;
+  }
 }
 </style>
