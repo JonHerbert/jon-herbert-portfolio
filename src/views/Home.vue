@@ -163,7 +163,7 @@
                 </div>
               </template>
             </Card>
-            <Card v-animate-inview="'fade'">
+            <Card>
               <template #card-content>
                 <a href="https://www.toolkitwebsites.co.uk/"
                   ><img
@@ -205,6 +205,42 @@
       </FullPanel>
     </section>
     <section>
+      <FullPanel :title="des.title" :panel-color="des.panelColor">
+        <template #content>
+          <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
+            <p>
+              Whilst I am not a designer by profession and certainly wouldn't
+              categorize myself as one, I have years of experience in both Adobe
+              Photoshop & Illustrator, and Affinity Designer & Photo for which I
+              have edited photos, and created custom logos and icons for many
+              websites.
+            </p>
+            <p>
+              I am a firm believer in simple, minimialistic design that is aimed
+              at making the website as user friendly as possible. After all, it
+              is the users you are trying to reach and market to that will be
+              using the website. This is something often missed by wanting the
+              website to be flashy and exciting and is sometimes considered more
+              important than functionality. Ideally, both would be followed -
+              form and function - but if function isn't working for your users,
+              they will simply leave your website.
+            </p>
+            <blockquote>
+              <i>
+                "...the most recent study, conducted by Forrester Consulting,
+                suggests that two seconds is the new threshold in terms of an
+                average online shopper's expectation for a Web page to load,
+                while 40 percent of shoppers will wait no more than three
+                seconds before abandoning a retail or travel site."
+                <br />
+                - SmartBear
+              </i>
+            </blockquote>
+          </div>
+        </template>
+      </FullPanel>
+    </section>
+    <section>
       <FullPanel :title="seo.title" :panel-color="seo.panelColor">
         <template #content>
           <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
@@ -236,46 +272,7 @@
         </template>
       </FullPanel>
     </section>
-    <section>
-      <FullPanel :title="des.title" :panel-color="des.panelColor">
-        <template #content>
-          <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
-            <p>
-              Whilst I am not a designer by profession and certainly wouldn't
-              categorize myself as one, I have years of experience in both Adobe
-              Photoshop & Illustrator, and Affinity Designer & Photo for which I
-              have edited photos, and I have created logos and icons for many
-              websites.
-            </p>
-            <p>
-              I am a firm believer in simple, minimialistic design that is aimed
-              at making the website as user friendly as possible. After all, it
-              is the users you are trying to reach and market to that will be
-              using the website. This is something that is often missed by
-              wanting the website to be flashy and exciting and that is
-              sometimes considered more important than the functionality.
-              Ideally, both would be followed - form and function - but if
-              function isn't working for your users, they will leave the
-              website.
-            </p>
-            <blockquote>
-              <i>
-                "...the most recent study, conducted by Forrester Consulting,
-                suggests that two seconds is the new threshold in terms of an
-                average online shopper's expectation for a Web page to load,
-                while 40 percent of shoppers will wait no more than three
-                seconds before abandoning a retail or travel site."
-                <br />
-                - SmartBear
-              </i>
-            </blockquote>
-          </div>
-        </template>
-      </FullPanel>
-    </section>
-    <section>
-      <FullPanel :title="pro.title" :panel-color="pro.panelColor" />
-    </section>
+
     <section>
       <Footer />
     </section>
@@ -312,14 +309,10 @@ export default {
       },
       seo: {
         title: 'SEO Optimization',
-        panelColor: "var(--surface-a)"
+        panelColor: "var(--surface-d)"
       },
       des: {
         title: 'Design',
-        panelColor: "var(--surface-d)"
-      },
-      pro: {
-        title: 'Project Management',
         panelColor: "var(--surface-a)"
       },
     }

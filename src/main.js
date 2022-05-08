@@ -4,7 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
-import { AnimateInViewDirective } from "@neeravp/vue-3-animate-in-view";
+//import { AnimateInViewDirective } from "@neeravp/vue-3-animate-in-view";
 
 import PrimeVue from 'primevue/config';
 import Button from 'primevue/button';
@@ -23,6 +23,6 @@ app.use(PrimeVue, { inputStyle: 'filled', ripple: true });
 app.component('Button', Button);
 app.component('Divider', Divider);
 
-app.directive("animate-inview", AnimateInViewDirective);
+//app.directive("animate-inview", AnimateInViewDirective);
 
 app.mount("#app");

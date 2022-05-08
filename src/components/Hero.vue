@@ -24,12 +24,12 @@
         </div>
 
         <Button
-          label="Learn More"
+          label="About"
           type="button"
           class="mr-3 p-button-raised p-ripple"
         ></Button>
         <Button
-          label="Live Demo"
+          label="Portfolio"
           type="button"
           class="p-button-outlined p-ripple"
         ></Button>
