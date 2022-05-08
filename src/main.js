@@ -18,7 +18,7 @@ import 'primeicons/primeicons.css';
 const app = createApp(App);
 app.use(store);
 app.use(router);
-app.use(PrimeVue, { inputStyle: 'filled' }, { ripple: true });
+app.use(PrimeVue, { inputStyle: 'filled', ripple: true });
 
 app.component('Button', Button);
 app.component('Divider', Divider);
