@@ -1,0 +1,149 @@
+{
+  "portfolio": 
+  [
+    {
+      "title": "Oyster Marketing and Communications",
+      "url": "https://www.oystermc.com/",
+      "img": "Oyster-Marketing-and-Communications.png",
+      "text": "A small 5 page website following brand guidelines, custom logo design and animations."
+    },
+    {
+      "title": "Overstone Park School",
+      "url": "https://www.overstoneparkschool.co.uk/",
+      "img": "Overstone-Park-School-Ltd.png",
+      "text": "Overstone Park School is a large website that needed to be updated regularly by the school staff, it includes the ability to upload files, add new information and new pages when necessary and is very modern in design."
+    },
+    {
+      "title": "Karen Carpenter Coaching",
+      "url": "https://www.karencarpentercoaching.com/",
+      "img": "Karen-Carpenter.png",
+      "text": "A simple but engaging website using a defined colour palette to outline different sections. Includes a blog, form testimonial slider and animations."
+    },
+    {
+      "title": "St Cross Kitchens",
+      "url": "https://www.stcrosskitchens.co.uk/",
+      "img": "St-Cross-Kitchens.png",
+      "text": "Sleek with great photos, showing off their work including a popup gallery and image slider."
+    },
+    {
+      "title": "AICN Group",
+      "url": "https://www.aicn-group.com/",
+      "img": "AICN-Group.png",
+      "text": "A small website with sleek animations make it feel futuristic which goes with their content of research in the field of Brain Imaging Techniques."
+    },
+    {
+      "title": "Overstone Park Fledglings",
+      "url": "http://www.overstoneparkfledglings.com/",
+      "img": "Fledglings-Day-Nursery.png",
+      "text": "A 1-page website similar in style to Overstone Park School - it's sister school - the aim was to give as much information as possible whilst appealing to parents of young children. Bright colours and a simple design allow the content to shine through."
+    },
+    {
+      "title": "Alexander Christian",
+      "url": "https://www.alexander-christian.co.uk/",
+      "img": "Alexander-Christian.png",
+      "text": "A highly customized and uniquely designed website that went through many iterations. Includes a completely custom before and after slider to show off the restoration work of the client as well as complex animations on every page."
+    },
+    {
+      "title": "Notion Services",
+      "url": "http://www.notionservices.co.uk/",
+      "img": "Notion-Services.png",
+      "text": "A fairly straightforward business website detailing all of the companies many services. Simple design and colour scheme for ease of use for the end user with calls to action on most pages."
+    },
+    {
+      "title": "Isles of Scilly IFCA",
+      "url": "https://www.scillyifca.gov.uk/",
+      "img": "Isles-of-Scilly-IFCA.png",
+      "text": "At Toolkit we worked with many different IFCA groups across the country, keeping to a similar design for each. It needed to be informative and easy to navigate."
+    },
+    {
+      "title": "Dovetail Joinery",
+      "url": "https://www.dovetail-joinery.co.uk/",
+      "img": "Dovetail-Joinery.png",
+      "text": "Similar to St Cross Kitchens, this site needed to focus on the services and work of the client."
+    },
+    {
+      "title": "Richard Camden Author",
+      "url": "https://www.rmcamden.com/",
+      "img": "Richard-Camden.png",
+      "text": "A 1-page site advertising a book written by the client, simple but effective design with the book forefront at the top of the page. Includes links to buy as well as calls to action."
+    },
+    {
+      "title": "Excel Activity Group",
+      "url": "https://www.excelactivitygroup.co.uk/",
+      "img": "Excel-Activity-Group.png",
+      "text": "A 100+ page website with a video for the main header giving users a fun introduction to the company. It includes a members area and a payment portal."
+    },
+    {
+      "title": "Halesford Design",
+      "url": "http://www.halesforddesign.com/",
+      "img": "Halesford-Design.png",
+      "text": "Beautiful, high-resolution photos are a massive boost when building a website like this. It was designed to match the minimalist and modern style of the work the client produces giving a high-end feel."
+    },
+    {
+      "title": "Smartcom Solutions",
+      "url": "https://www.smartcomsolutions.co.uk/",
+      "img": "Halesford-Design.png",
+      "text": "Beautiful, high-resolution photos are a massive boost when building a website like this. It was designed to match the minimalist and modern style of the work the client produces giving a high-end feel."
+    },
+    {
+      "title": "Smartcom Solutions",
+      "url": "https://www.smartcomsolutions.co.uk/",
+      "img": "AICN-Group.png",
+      "text": "Beautiful, high-resolution photos are a massive boost when building a website like this. It was designed to match the minimalist and modern style of the work the client produces giving a high-end feel."
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    },
+    {
+      "title": "test",
+      "url": "test",
+      "img": "AICN-Group.png",
+      "text": "test test test"
+    }
+  ]
+}

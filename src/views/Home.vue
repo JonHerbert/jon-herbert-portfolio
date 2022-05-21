@@ -12,7 +12,7 @@
     <section>
       <FullPanel :title="fed.title" :panel-color="fed.panelColor">
         <template #content>
-          <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
+          <div class="mt-0 mb-4 text-500 text-2xl line-height-2">
             <p>
               Creating responsive and user friendly websites is a passion for
               me. I have spent the last 7 years working hard to become a better
@@ -207,7 +207,7 @@
     <section>
       <FullPanel :title="des.title" :panel-color="des.panelColor">
         <template #content>
-          <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
+          <div class="mt-0 mb-4 text-500 text-2xl line-height-2">
             <p>
               Whilst I am not a designer by profession and certainly wouldn't
               categorize myself as one, I have years of experience in both Adobe
@@ -243,7 +243,7 @@
     <section>
       <FullPanel :title="seo.title" :panel-color="seo.panelColor">
         <template #content>
-          <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
+          <div class="mt-0 mb-4 text-500 text-2xl line-height-2">
             <p>
               SEO (Search Engine Optimization) is an important area to consider
               in today's internet. Whilst there are other search engines besides
@@ -280,44 +280,47 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-import Hero from '@/components/Hero'
-import FullPanel from '@/components/FullPanel'
-import Footer from '@/components/Footer'
-import Card from '@/components/Card'
+import Hero from "@/components/Hero";
+import FullPanel from "@/components/FullPanel";
+import Footer from "@/components/Footer";
+import Card from "@/components/Card";
 
 export default {
   name: "Home",
   components: {
-    Hero, FullPanel, Footer, Card
+    Hero,
+    FullPanel,
+    Footer,
+    Card,
   },
   setup() {
-    return { 
+    return {
       hero: {
-        title: 'Jon Herbert',
-        subtitle: 'Web Developer',
-        excerpt: 'Expert Front-End Development <br/> Multiple CMS Experience <br/> SEO Optimization <br/> Design & Logos <br/> Project Management',
-        image: 'markus-spiske-1LLh8k2_YFk-unsplash.jpg'
+        title: "Jon Herbert",
+        subtitle: "Web Developer",
+        excerpt:
+          "Expert Front-End Development <br/> Multiple CMS Experience <br/> SEO Optimization <br/> Design & Logos <br/> Project Management",
+        image: "markus-spiske-1LLh8k2_YFk-unsplash.jpg",
       },
       fed: {
-        title: 'Front End Development',
-        panelColor: "var(--surface-a)"
+        title: "Front End Development",
+        panelColor: "var(--surface-a)",
       },
       cms: {
-        title: 'CMS Experience',
-        panelColor: "var(--surface-d)"
+        title: "CMS Experience",
+        panelColor: "var(--surface-d)",
       },
       seo: {
-        title: 'SEO Optimization',
-        panelColor: "var(--surface-d)"
+        title: "SEO Optimization",
+        panelColor: "var(--surface-d)",
       },
       des: {
-        title: 'Design',
-        panelColor: "var(--surface-a)"
+        title: "Design",
+        panelColor: "var(--surface-a)",
       },
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style scoped>

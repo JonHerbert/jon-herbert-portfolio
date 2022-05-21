@@ -54,6 +54,12 @@ p {
   border-radius: 0 !important;
 }
 
+.panel-inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;

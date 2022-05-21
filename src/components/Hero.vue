@@ -1,15 +1,7 @@
 <template>
   <div class="grid grid-nogutter surface-section text-800">
     <div
-      class="
-        col-12
-        md:col-6
-        p-6
-        text-center
-        md:text-left
-        flex
-        align-items-center
-      "
+      class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center"
     >
       <section>
         <span class="block text-6xl font-bold mb-1 title">{{ title }}</span>
@@ -39,7 +31,7 @@
       class="col-12 md:col-6 overflow-hidden hidden md:flex object-fit h-full"
     >
       <img
-        :src="require(`@/assets/images/${image}`)"
+        :src="`${publicPath}img/images/${image}`"
         alt="Image"
         class="md:ml-auto block"
         style="clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0 100%)"
@@ -49,11 +41,12 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import { onMounted } from "vue";
 
 export default {
-  props: ['title', 'subtitle', 'excerpt', 'image'],
+  props: ["title", "subtitle", "excerpt", "image"],
   setup(props) {
+    let publicPath = process.env.BASE_URL;
     let titlePosition = 0;
     let subtitlePosition = 0;
     const speed = 100;
@@ -62,35 +55,42 @@ export default {
     let animDone = false;
 
     const typewriter = () => {
-      if(!animDone) {
-        document.querySelector('.title').innerHTML = props.title.substring(0, titlePosition) + "<span class='blinker'>\u2590</span>";
-        document.querySelector('.subtitle').innerHTML = "";
+      if (!animDone) {
+        document.querySelector(".title").innerHTML =
+          props.title.substring(0, titlePosition) +
+          "<span class='blinker'>\u2590</span>";
+        document.querySelector(".subtitle").innerHTML = "";
 
-        if(titlePosition++ != title.length) {
-         setTimeout(typewriter, speed);
-        }
-        else { 
-          document.querySelector('.title').innerHTML = props.title.substring(0, titlePosition)
+        if (titlePosition++ != title.length) {
+          setTimeout(typewriter, speed);
+        } else {
+          document.querySelector(".title").innerHTML = props.title.substring(
+            0,
+            titlePosition,
+          );
           animDone = true;
-       }
+        }
       }
 
-      if(animDone) {
-        document.querySelector('.subtitle').innerHTML = props.subtitle.substring(0, subtitlePosition) + "<span class='blinker'>\u2590</span>";
-        if(subtitlePosition++ != subtitle.length) {
+      if (animDone) {
+        document.querySelector(".subtitle").innerHTML =
+          props.subtitle.substring(0, subtitlePosition) +
+          "<span class='blinker'>\u2590</span>";
+        if (subtitlePosition++ != subtitle.length) {
           setTimeout(typewriter, speed);
         }
       }
-    }
+    };
 
     onMounted(() => {
       typewriter();
-    })
+    });
 
     return {
-    }
+      publicPath,
+    };
   },
-}
+};
 </script>
 
 <style>

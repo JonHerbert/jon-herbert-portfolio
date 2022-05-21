@@ -12,7 +12,7 @@
     <section>
       <FullPanel :title="about.title" :panel-color="about.panelColor">
         <template #content>
-          <div class="col-8 mt-0 mb-4 text-500 text-2xl line-height-2">
+          <div class="mt-0 mb-4 text-500 text-2xl line-height-2">
             <p>
               As a youngster I was obsessed by two things, computer games and
               music. When the two combined, even better! I grew up with a family
@@ -89,31 +89,32 @@
 </template>
 
 <script>
-import { ref } from 'vue'
-import Hero from '@/components/Hero'
-import FullPanel from '@/components/FullPanel'
-import Footer from '@/components/Footer'
+import Hero from "@/components/Hero";
+import FullPanel from "@/components/FullPanel";
+import Footer from "@/components/Footer";
 
 export default {
   name: "Home",
   components: {
-    Hero, FullPanel, Footer
+    Hero,
+    FullPanel,
+    Footer,
   },
   setup() {
-    return { 
+    return {
       hero: {
-        title: 'Hey! Nice to meet you!',
+        title: "Hey! Nice to meet you!",
         subtitle: "My name's Jon, here's a bit about me.",
         excerpt: "",
-        image: 'markus-spiske-1LLh8k2_YFk-unsplash.jpg'
+        image: "markus-spiske-1LLh8k2_YFk-unsplash.jpg",
       },
       about: {
-        title: 'Background',
-        panelColor: "var(--surface-d)"
+        title: "Background",
+        panelColor: "var(--surface-d)",
       },
-    }
-  }
-}
+    };
+  },
+};
 </script>
 <style lang="scss">
 .main-hero {
