@@ -5,16 +5,18 @@
         <section v-for="(header, index) in headers" :key="header">
           <FullPanel :title="header" :panel-color="panelColor">
             <template #title>
-              <h2 class="col-12 text-6xl font-bold mb-4 title">{{ header }}</h2>
+              <h2 class="text-6xl font-bold mb-4 title">{{ header }}</h2>
+              <h3>Below are some of the websites I have built over the last 4 years.</h3>
             </template>
             <template #content>
-              <div class="portContent grid mt-4" v-if="index == 0">
+              <div class="portContent mt-4" v-if="index == 0">
                 <a class="anchor" :name="header" :id="index"></a>
                 <Card
                   v-for="item in portfolioData.portfolio"
                   v-motion
                   :initial="{
                     opacity: 0,
+                    scale: 1,
                     transition: {
                       type: 'spring',
                       stiffness: '100',
@@ -221,23 +223,35 @@
           </FullPanel>
         </section>
       </article>
-      <aside>
-        <div class="text-left">
-          <a
-            v-for="(header, index) in headers"
-            :key="header"
-            :href="`#${index}`"
-            :class="{ active: index == currentSection }"
-          >
-            {{ header }}
-          </a>
-        </div>
-      </aside>
     </main>
+
     <section>
       <Footer />
     </section>
   </div>
+  <Sidebar
+    class="sidebar"
+    v-model:visible="visibleRight"
+    :baseZIndex="10000"
+    :dismissable="true"
+    position="right"
+  >
+    <div class="text-left">
+      <a
+        v-for="(header, index) in headers"
+        :key="header"
+        :href="`#${index}`"
+        :class="{ active: index == currentSection }"
+      >
+        {{ header }}
+      </a>
+    </div>
+  </Sidebar>
+  <Button
+    class="sidebar-btn"
+    icon="pi pi-arrow-left"
+    @click="visibleRight = !visibleRight"
+  />
 </template>
 
 <script setup>
@@ -250,6 +264,7 @@ import { ref, onMounted } from "vue";
 const headers = ["Website Portfolio", "Game Portfolio", "Project Portfolio"];
 const panelColor = "var(--surface-d)";
 const currentSection = ref("");
+const visibleRight = ref(false);
 
 onMounted(() => {
   const observer = new IntersectionObserver(
@@ -271,43 +286,47 @@ onMounted(() => {
 </script>
 
 <style>
-main {
-  display: flex;
+.sidebar-btn {
+  position: fixed;
+  top: 100px;
+  right: 0;
 }
-
-article {
-  width: 75%;
+.p-sidebar-content {
+  padding-top: 2em;
 }
-
-aside {
-  width: 25%;
-}
-aside div {
+.p-sidebar-content div {
   position: sticky;
   top: 20px;
-  padding-left: 2em;
 }
-aside > div > a {
+.p-sidebar-content > div > a {
   display: block;
   color: var(--primary);
   text-decoration: none;
   border-left: 1px solid transparent;
-  padding-left: 2em;
+  font-size: 1.2rem;
+  padding: 0.25em 1em;
 }
-
-aside > div > a.active {
+.p-sidebar-content > div > a.active {
   font-weight: bold;
-  border-left: 1px solid red;
+  font-style: italic;
+  border-left: 1px solid var(--surface-a);
 }
-
+.p-sidebar .p-sidebar-header .p-sidebar-close:focus,
+.p-sidebar .p-sidebar-header .p-sidebar-icon:focus .p-link:focus,
+.p-menubar .p-menubar-button:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .portContent {
   position: relative;
+  display: inline-grid;
+  gap: 3.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .anchor {
   position: absolute;
-  top: -100px;
+  top: -170px;
 }
-
 .external-link {
   text-decoration: none;
   color: #1c2127;
@@ -322,8 +341,8 @@ aside > div > a.active {
   font-weight: 700;
   align-self: start;
 }
-
 .portfolio-img {
   width: 100%;
+  border: 2px solid #fff;
 }
 </style>

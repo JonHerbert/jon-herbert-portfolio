@@ -283,7 +283,7 @@
 import Hero from "@/components/Hero";
 import FullPanel from "@/components/FullPanel";
 import Footer from "@/components/Footer";
-import Card from "@/components/Card";
+import Card from "@/components/CardHome";
 
 export default {
   name: "Home",

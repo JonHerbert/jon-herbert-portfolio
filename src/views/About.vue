@@ -88,7 +88,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import Hero from "@/components/Hero";
 import FullPanel from "@/components/FullPanel";
 import Footer from "@/components/Footer";

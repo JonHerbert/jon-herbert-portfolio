@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-column col-12 md:col-6 xl:col-4 surface-card p-4 border-round border-bg text-left"
+    class="flex flex-column surface-card p-4 border-round text-left card"
   >
     <h3>{{ title }}</h3>
     <a :href="url"
@@ -37,7 +37,16 @@ export default {
 </script>
 
 <style scoped>
-.border-bg {
-  border: 5px solid var(--surface-d);
+.card {
+  box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+  transition: transform 1s;
+}
+.card:hover {
+  transform: scale(1.1) !important;
 }
 </style>
