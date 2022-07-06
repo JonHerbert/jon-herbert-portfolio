@@ -5,7 +5,7 @@
     >
       <section>
         <span class="block text-6xl font-bold mb-1 title">{{ title }}</span>
-        <div class="text-6xl text-primary font-bold mb-3 subtitle">
+        <div class="text-3xl text-primary font-light mb-3 subtitle">
           {{ subtitle }}
         </div>
         <div>
@@ -97,12 +97,7 @@ export default {
 .subtitle {
   min-height: 60px;
 }
-.object-fit img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: right;
-}
+
 .blinker {
   animation: blinker 1s linear infinite;
   color: var(--primary-color);

@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import TopMenu from "@/components/TopMenu.vue"
+import TopMenu from "@/components/TopMenu.vue";
 
 export default {
   components: {
-    TopMenu
-  }
-}
+    TopMenu,
+  },
+};
 </script>
 
 <style lang="scss">
@@ -28,7 +28,7 @@ body {
 }
 
 #app {
-  font-family: "Fira Mono", monospace;
+  font-family: "Nunito", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -46,7 +46,7 @@ h6,
 }
 
 p {
-  font-family: "Fira Mono", monospace;
+  font-family: "Nunito", monospace;
   color: var(--text-color);
 }
 
@@ -68,5 +68,11 @@ p {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease-out;
+}
+.object-fit img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
 }
 </style>

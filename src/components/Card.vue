@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-column surface-card p-4 border-round text-left card"
-  >
+  <div class="flex flex-column surface-card p-4 border-round text-left card">
     <h3>{{ title }}</h3>
     <a :href="url"
       ><img

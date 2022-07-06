@@ -6,7 +6,10 @@
           <FullPanel :title="header" :panel-color="panelColor">
             <template #title>
               <h2 class="text-6xl font-bold mb-4 title">{{ header }}</h2>
-              <h3>Below are some of the websites I have built over the last 4 years.</h3>
+              <h3>
+                Below are some of the websites I have built over the last 4
+                years.
+              </h3>
             </template>
             <template #content>
               <div class="portContent mt-4" v-if="index == 0">
