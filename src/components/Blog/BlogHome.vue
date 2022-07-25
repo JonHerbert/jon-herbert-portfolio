@@ -1,26 +1,31 @@
 <template>
-  <div class="home">
-    <div class="posts">
-      <div class="loading" v-if="loading">
+  <main class="home">
+    <article class="posts">
+      <section class="loading" v-if="loading.value">
         <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
-      </div>
-      <div v-if="error" class="error">
+      </section>
+      <section v-if="error" class="error">
         {{ error }}
-      </div>
-      <div class="container">
-        <div v-for="post in posts" class="post-item" :key="post._id">
+      </section>
+      <section class="container grid">
+        <div v-for="post in posts" class="post-item col" :key="post._id">
           <router-link :to="`/blog/${post.slug.current}`">
             <h2>{{ post.title }}</h2>
+            <p>{{ post.excerpt }}</p>
           </router-link>
-          <p>{{ post.excerpt }}</p>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </article>
+    <footer>
+      <Footer />
+    </footer>
+  </main>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from "vue";
 import sanity from "@/client.js";
+import Footer from "@/components/Footer";
 
 const query = `*[_type == "post"]{
   _id,
@@ -29,33 +34,25 @@ const query = `*[_type == "post"]{
   excerpt
 }[0...50]`;
 
-export default {
-  name: "BlogHome",
-  data() {
-    return {
-      loading: true,
-      posts: [],
-    };
-  },
-  created() {
-    this.fetchData();
-  },
-  methods: {
-    fetchData() {
-      this.error = this.post = null;
-      this.loading = true;
-      sanity.fetch(query).then(
-        (posts) => {
-          this.loading = false;
-          this.posts = posts;
-        },
-        (error) => {
-          this.error = error;
-        }
-      );
-    },
-  },
-};
+let posts = ref([]);
+let loading = ref(true);
+let error = ref(null);
+
+onMounted(() => {
+  const fetchData = () => {
+    loading = true;
+    sanity.fetch(query).then(
+      (blogPosts) => {
+        loading = false;
+        posts.value = blogPosts;
+      },
+      (err) => {
+        error.value = err;
+      },
+    );
+  };
+  fetchData();
+});
 </script>
 
 <style lang="scss" scoped>
@@ -69,5 +66,20 @@ export default {
 }
 .post-item {
   box-sizing: border-box;
+  background-color: var(--surface-d);
+  text-align: left;
+  margin: 10px;
+  position: relative;
+  height: 200px;
+}
+.post-item a {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 5px 20px;
 }
 </style>

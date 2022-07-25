@@ -1,13 +1,7 @@
 <template>
-  <BlogHome />
+	<BlogHome />
 </template>
 
-<script>
-import BlogHome from '../components/Blog/BlogHome.vue'
-
-export default {
-  components: { 
-    BlogHome
-  }
-}
+<script setup>
+import BlogHome from "@/components/Blog/BlogHome.vue";
 </script>

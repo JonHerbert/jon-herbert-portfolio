@@ -5,7 +5,7 @@
     >
       <section>
         <span class="block text-6xl font-bold mb-1 title">{{ title }}</span>
-        <div class="text-3xl text-primary font-light mb-3 subtitle">
+        <div class="text-4xl text-primary font-light mb-3 subtitle">
           {{ subtitle }}
         </div>
         <div>
@@ -16,12 +16,12 @@
         </div>
 
         <Button
-          label="About"
+          :label="button1"
           type="button"
           class="mr-3 p-button-raised p-ripple"
         ></Button>
         <Button
-          label="Portfolio"
+          :label="button2"
           type="button"
           class="p-button-outlined p-ripple"
         ></Button>
@@ -40,11 +40,11 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 import { onMounted } from "vue";
 
 export default {
-  props: ["title", "subtitle", "excerpt", "image"],
+  props: ["title", "subtitle", "excerpt", "image", "button1", "button2"],
   setup(props) {
     let publicPath = process.env.BASE_URL;
     let titlePosition = 0;

@@ -15,10 +15,15 @@
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
+footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 5px solid var(--surface-d);
+}
 </style>

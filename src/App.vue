@@ -35,6 +35,13 @@ body {
   color: var(--text-color);
 }
 
+main.home {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 65px);
+}
+
 h1,
 h2,
 h3,

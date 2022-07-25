@@ -1,25 +1,49 @@
 <template>
-  <div>
-    <div class="loading" v-if="loading">Loading...</div>
+  <main class="home">
+    <article>
+      <section>
+        <section class="loading" v-if="loading.value">
+          <i class="pi pi-spin pi-spinner" style="font-size: 2rem"></i>
+        </section>
+        <div v-if="error" class="error">
+          {{ error }}
+        </div>
+      </section>
+      <section>
+        <FullPanel :title="post.title">
+          <template #title>
+            <h1 class="text-4xl font-bold mb-4 title">{{ post.title }}</h1>
+          </template>
+          <template #content>
+            <div
+              v-if="post"
+              class="content mt-0 mb-4 text-500 line-height-2 text-left"
+            >
+              <img
+                v-if="post.image"
+                :src="imageUrlFor(post.image).width(480)"
+              />
 
-    <div v-if="error" class="error">
-      {{ error }}
-    </div>
-
-    <div v-if="post" class="content">
-      <h1>{{ post.title }}</h1>
-      <img v-if="post.image" :src="imageUrlFor(post.image).width(480)" />
-
-      <h6>By: {{ post.name }}</h6>
-      <SanityBlocks :blocks="blocks" />
-    </div>
-  </div>
+              <SanityBlocks :blocks="blocks" />
+            </div>
+          </template>
+        </FullPanel>
+      </section>
+    </article>
+    <footer>
+      <Footer />
+    </footer>
+  </main>
 </template>
 
-<script>
+<script setup>
 import { SanityBlocks } from "sanity-blocks-vue-component";
 import sanity from "@/client";
 import imageUrlBuilder from "@sanity/image-url";
+import Footer from "@/components/Footer";
+import FullPanel from "@/components/FullPanel";
+import { useRoute } from "vue-router";
+import { ref, onMounted } from "vue";
 
 const imageBuilder = imageUrlBuilder(sanity);
 
@@ -39,41 +63,31 @@ const query = `*[slug.current == $slug] {
 }[0]
 `;
 
-export default {
-  name: "BlogPost",
-  components: { SanityBlocks },
-  data() {
-    return {
-      loading: true,
-      post: [],
-      blocks: [],
-    };
-  },
-  created() {
-    this.fetchData();
-  },
-  methods: {
-    imageUrlFor(source) {
-      return imageBuilder.image(source);
-    },
-    fetchData() {
-      this.error = this.post = null;
-      this.loading = true;
+let post = ref([]);
+let blocks = ref([]);
+let loading = ref(true);
+let error = ref(null);
 
-      sanity.fetch(query, { slug: this.$route.params.slug }).then(
-        (post) => {
-          this.loading = false;
-          this.post = post;
-          this.blocks = post.body;
-        },
-        (error) => {
-          this.error = error;
-        }
-      );
-    },
-  },
+const imageUrlFor = (source) => {
+  return imageBuilder.image(source);
 };
+
+onMounted(() => {
+  const fetchData = () => {
+    loading = true;
+    sanity.fetch(query, { slug: useRoute().params.slug }).then(
+      (postArticle) => {
+        loading = false;
+        post.value = postArticle;
+        blocks.value = postArticle.body;
+      },
+      (err) => {
+        error.value = err;
+      },
+    );
+  };
+  fetchData();
+});
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
