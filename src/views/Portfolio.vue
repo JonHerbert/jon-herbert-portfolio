@@ -2,9 +2,14 @@
   <main class="home">
     <article>
       <section v-for="(header, index) in headers" :key="header">
-        <FullPanel :title="header" :fat-inner="true" :panel-color="panelColor">
+        <FullPanel
+          :title="header"
+          :fat-inner="true"
+          :panel-color="panelColor"
+          :gradient-bg="false"
+        >
           <template #title>
-            <h2 class="text-6xl font-bold mb-4 title">
+            <h2 class="text-6xl font-bold mb-4 mt-0 pt-6 title">
               {{ header }}
             </h2>
             <h3>
@@ -22,20 +27,6 @@
                 :url="item.url"
                 :text="item.text"
               />
-
-              https://www.orchard-daynursery.co.uk/
-              https://www.matthewwinchester.com/ https://www.evansandknight.com/
-              http://www.angliataxis.net/ http://www.kartcomponents.com/
-              https://www.sallydunham.co.uk/
-              http://www.farquharsonduffysculpture.com
-              http://www.immunopsychiatry.com/ https://www.tgnh.co.uk/
-              https://www.malci.co.uk/ https://www.sustaingroup.co.uk/
-              http://www.portcullis-construction.co.uk/
-              https://www.cspfoodservicesltd.co.uk/
-              http://www.polarisactuaries.com/ https://www.atamis.co.uk/
-              https://www.michael-henbury.uk/ http://www.skoona.com/
-              https://www.handinhandgroup.com/
-              https://www.internationalteachersolutions.com/
             </div>
             <div v-else-if="index == 1" class="portContent">
               <a :id="index" class="anchor" :name="header" />

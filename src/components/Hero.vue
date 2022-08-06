@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-nogutter surface-section text-800">
     <div
-      class="col-12 md:col-6 p-6 text-center md:text-left flex align-items-center"
+      class="col-12 md:col-6 p-6 text-center md:text-left flex justify-content-center sm:justify-content-start align-items-center"
     >
       <section>
         <span class="block text-6xl font-bold mb-1 title">{{ title }}</span>
