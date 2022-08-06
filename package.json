@@ -5,8 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@neeravp/vue-3-animate-in-view": "^1.0.1",
@@ -38,7 +37,6 @@
     "eslint-plugin-vue": "^7.0.0",
     "node-sass": "^4.12.0",
     "prettier": "^2.2.1",
-    "sass-loader": "^8.0.2",
-    "execa": "^5.1.1"
+    "sass-loader": "^8.0.2"
   }
 }
