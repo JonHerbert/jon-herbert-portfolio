@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "package.json",
-  "author": null,
+  "author": "Jon Herbert",
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",

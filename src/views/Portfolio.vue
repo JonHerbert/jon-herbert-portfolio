@@ -2,7 +2,7 @@
   <main class="home">
     <article>
       <section v-for="(header, index) in headers" :key="header">
-        <FullPanel :title="header" :panel-color="panelColor">
+        <FullPanel :title="header" :fat-inner="true" :panel-color="panelColor">
           <template #title>
             <h2 class="text-6xl font-bold mb-4 title">
               {{ header }}

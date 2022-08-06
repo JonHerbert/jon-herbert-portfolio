@@ -86,7 +86,11 @@
         </FullPanel>
       </section>
       <section>
-        <FullPanel :title="cms.title" :panel-color="cms.panelColor">
+        <FullPanel
+          :title="cms.title"
+          :fat-inner="true"
+          :panel-color="cms.panelColor"
+        >
           <template #content>
             <div class="flex flex-column xl:flex-row">
               <Card>

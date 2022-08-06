@@ -66,6 +66,11 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
+.panel-inner50 {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+}
 
 .fade-enter-from,
 .fade-leave-to {
