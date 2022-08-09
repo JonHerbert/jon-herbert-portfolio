@@ -1,5 +1,5 @@
 {
-  "portfolio": 
+  "webportfolio": 
   [
     {
       "title": "Oyster Marketing and Communications",
@@ -82,122 +82,158 @@
     {
       "title": "Smartcom Solutions",
       "url": "https://www.smartcomsolutions.co.uk/",
-      "img": "Halesford-Design.png",
-      "text": "Beautiful, high-resolution photos are a massive boost when building a website like this. It was designed to match the minimalist and modern style of the work the client produces giving a high-end feel."
+      "img": "Smartcom-Solutions.png",
+      "text": "Minimialistic colour scheme and design that focuses on CTA's and services"
     },
     {
-      "title": "test",
+      "title": "Orchard Day Nursery",
       "url": "https://www.orchard-daynursery.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Orchard-Day-Nursery.png",
+      "text": "A simple, softly coloured nursery website that shows off the fun and friendly atmosphere of the service they provide."
     },
     {
-      "title": "test",
+      "title": "Matthew Winchester",
       "url": "https://www.matthewwinchester.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Matthew-Winchester.png",
+      "text": "Using great live performance photos and videos to create a high quality portfolio website for a session singer."
     },
     {
-      "title": "test",
+      "title": "Evans & Knight",
       "url": "https://www.evansandknight.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Evans-And-Knight.png",
+      "text": "Great high quality photos with simple but effective animations."
     },
     {
-      "title": "test",
+      "title": "Kart Components",
       "url": "http://www.kartcomponents.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Kart-Components-Manufacturing.png",
+      "text": "Big and bold animations and photos whilst showing off services and products."
     },
     {
-      "title": "test",
+      "title": "Anex Cars",
       "url": "http://www.angliataxis.net/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Anex-Cars.png",
+      "text": "This website utilises a parallax effect for several images giving the site an interesting flow."
     },
     {
-      "title": "test",
+      "title": "Sally Dunham",
       "url": "https://www.sallydunham.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Sally-Dunham.png",
+      "text": "A simple design that emphasises the artwork of the artist first and foremost."
     },
     {
-      "title": "test",
+      "title": "Angela Farquharson & Martin Duffy",
       "url": "http://www.farquharsonduffysculpture.com",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Angela-Farquharson-Martin-Duffy.png",
+      "text": "A large portfolio site for two artists work."
     },
     {
-      "title": "test",
+      "title": "Immunopsychiatry Research Group",
       "url": "http://www.immunopsychiatry.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Immunopsychiatry-Research-Group.png",
+      "text": "Focusing on the informative aspects of the work and research, the site is easy to engage with."
     },
     {
-      "title": "test",
+      "title": "Grange Nursing Home",
       "url": "https://www.tgnh.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Grange-Nursing-Home.png",
+      "text": "Nursing Home websites need to be informative, but they also need to be welcoming and friendly so that families feel reassured about their loved ones wellbeing."
     },
     {
-      "title": "test",
+      "title": "Malci Construction",
       "url": "https://www.malci.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Malci-Constructions.png",
+      "text": "Simple design with lots of information, CTA's, service details and a form."
     },
     {
-      "title": "test",
+      "title": "Sustain Group",
       "url": "https://www.sustaingroup.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Sustain-Group-Ltd.png",
+      "text": "Another minimalistic site with a few custom animations."
     },
     {
-      "title": "test",
+      "title": "Portcullis Hampshire Ltd",
       "url": "http://www.portcullis-construction.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Portcullis-Hampshire-Ltd.png",
+      "text": "Similar to Malci Construction, but with higher contrast colours. Great photos do the heavy lifting on sites like these!"
     },
     {
-      "title": "test",
+      "title": "CSP Food Services",
       "url": "https://www.cspfoodservicesltd.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "CSP-Food-Services-Ltd.png",
+      "text": "A good example of how stock imagery can vastly improve the overall design."
     },
     {
-      "title": "test",
+      "title": "Polaris Actuaries",
       "url": "http://www.polarisactuaries.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Polaris.png",
+      "text": "The clients here wanted some sleek and engaging animations which helps when the content can sometimes be a bit dry by it's nature."
     },
     {
-      "title": "test",
+      "title": "Atamis",
       "url": "https://www.atamis.co.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Atamis-Ltd.png",
+      "text": "A lot of the key design choices were based on the logo including animated cogs and colour coded sections in the inner pages."
     },
     {
-      "title": "test",
+      "title": "Michael Henbury",
       "url": "https://www.michael-henbury.uk/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Michael-Henbury.png",
+      "text": "A really fun portfolio website for an actor. Due to his appearing in Star Wars, he asked us to create a splash screen similar to that of the opening of the films with the scrolling text. I believe this has been turned off for now though - shame!"
     },
     {
-      "title": "test",
+      "title": "Skoona",
       "url": "http://www.skoona.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Skoona.png",
+      "text": "Simple and sleek, very high-end and utilising the parallax effect."
     },
     {
-      "title": "test",
+      "title": "Hand In Hand Group",
       "url": "https://www.handinhandgroup.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "img": "Hand-In-Hand-Group.png",
+      "text": "Highly professional in design which goes - hand in hand - with their target market."
+    }
+  ],
+  "gameportfolio": 
+  [
+    {
+      "title": "Hexad Control",
+      "url": "https://jonherbert.github.io/jon-herbert-portfolio/blog/hexad-control-part-1",
+      "img": "hexad-control.gif",
+      "text": "A game based initially on the minigame Triple Triad from Final Fantasy 8 but with hexagons instead of squares! For more details see my ongoing blog about it."
     },
     {
-      "title": "test",
-      "url": "https://www.internationalteachersolutions.com/",
-      "img": "AICN-Group.png",
-      "text": "test test test"
+      "title": "Untitled Space Game",
+      "url": "",
+      "img": "space-game.gif",
+      "text": "I love anything Sci-fi and really enjoyed games like EV Nova growing up. The intention here was to create a procedurally generated galaxy with hundreds of star systems, planets, moons and some really interesting mechanics. More info here."
+    }
+  ],
+  "projectportfolio": 
+  [
+    {
+      "title": "D&D Party",
+      "url": "",
+      "img": "dandd-party.gif",
+      "text": "Utilising the open D&D 5e api, I wanted to create an all-in-one app that had both a fully searchable database for spells, monsters, classes, rules etc. and also a multi-user front-end that would combine, chat, group notes, party information and a separate area for the DM where they could send private messages and keep tabs on the story. More info here."
+    },
+    {
+      "title": "Galaxy Generator",
+      "url": "",
+      "img": "planets.png",
+      "text": "In order to create my space game I needed some procedural or 'PCG' tools to make up my galaxy."
+    },
+    {
+      "title": "Planet Generator",
+      "url": "",
+      "img": "planet-generator.gif",
+      "text": "A precursor to my galaxy generator that would have likely been refactored into it at some point."
+    },
+    {
+      "title": "Modular Space Ship Builder",
+      "url": "",
+      "img": "modular-spaceship-maker.gif",
+      "text": "I toyed with the idea of creating a modular system for the player to create ships."
     }
   ]
 }

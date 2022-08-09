@@ -332,7 +332,7 @@ import FullPanel from "@/components/FullPanel";
 import Footer from "@/components/Footer";
 import Card from "@/components/CardHome";
 
-let publicPath = process.env.BASE_URL;
+const publicPath = process.env.BASE_URL;
 
 const hero = ref({
   title: "Jon Herbert",

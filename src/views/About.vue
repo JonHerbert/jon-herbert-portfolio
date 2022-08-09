@@ -24,7 +24,7 @@
               <div class="grid">
                 <div class="col-12 md:col-4 mt-1 object-fit">
                   <img
-                    src="/img/images/walking-darcy-dog.png"
+                    :src="`${publicPath}img/images/walking-darcy-dog.png`"
                     style="width: 100%; object-position: center"
                     alt="walking darcy"
                   />
@@ -73,9 +73,9 @@
               <div class="grid">
                 <div class="col-12 md:col-4 md:flex-order-1 object-fit">
                   <img
-                    src="/img/images/darcy-sleeping.png"
+                    :src="`${publicPath}img/images/darcy-sleeping.png`"
                     style="width: 100%; object-position: center"
-                    alt=""
+                    alt="darcy sleeping"
                   />
                 </div>
                 <div
@@ -99,7 +99,7 @@
                     thousands's of lines of code and after becoming Development
                     Liason at Toolkit, I was offered the chance to work on an
                     app designed by my boss and a few others called MIXO. This
-                    would be an app aimed at DJ's replacing iTunes iTunes and
+                    would be an app aimed at DJ's replacing iTunes and
                     giving them the ability to swap which software they used.
                     It's a niche project, but has huge potential and plugs a gap
                     that millions of DJ's struggle with when gigging. If you
@@ -107,7 +107,7 @@
                     for DJ'ing, however they are closed source/proprietry which
                     means they don't integrate with each other. This can be
                     difficult if you work with one software but need to gig with
-                    another. Here's a link to MIXO's page which has a lot more
+                    another. <a href="https://www.mixo.dj/" target="_blank">Here's a link to MIXO's page</a> which has a lot more
                     information about what we are building and how to get
                     involved.
                   </p>
@@ -136,6 +136,8 @@ import FullPanel from "@/components/FullPanel";
 import Footer from "@/components/Footer";
 import VuePdfEmbed from "vue-pdf-embed";
 
+const publicPath = process.env.BASE_URL;
+
 const source1 = ref("/docs/resume.pdf");
 const hero = ref({
   title: "Hey! Nice to meet you!",
@@ -154,4 +156,5 @@ const about = ref({
 .main-hero {
   height: calc(100vh - 65px);
 }
+
 </style>

@@ -12,15 +12,24 @@
             <h2 class="text-6xl font-bold mb-4 mt-0 pt-6 title">
               {{ header }}
             </h2>
-            <h3>
+            <h3 v-if="index == 0">
               Below are some of the websites I have built over the last 4 years.
+            </h3>
+            <h3 v-else-if="index == 1">
+              Below are some of the game ideas and prototypes I have been
+              working on. More details can be found in my blog for some of
+              these.
+            </h3>
+            <h3 v-else-if="index == 2">
+              Below are some of the unfinished project ideas I have been working
+              on.
             </h3>
           </template>
           <template #content>
             <div v-if="index == 0" class="portContent mt-4">
               <a :id="index" class="anchor" :name="header" />
               <Card
-                v-for="item in portfolioData.portfolio"
+                v-for="item in portfolioData.webportfolio"
                 :key="item.title"
                 :title="item.title"
                 :image="item.img"
@@ -30,159 +39,25 @@
             </div>
             <div v-else-if="index == 1" class="portContent">
               <a :id="index" class="anchor" :name="header" />
-              <p>
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Vivamus magna justo, lacinia eget consectetur sed,
-                convallis at tellus. Cras ultricies ligula sed magna dictum
-                porta. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia Curae; Donec velit neque, auctor sit
-                amet aliquam vel, ullamcorper sit amet ligula. Quisque velit
-                nisi, pretium ut lacinia in, elementum id enim. Pellentesque in
-                ipsum id orci porta dapibus.
-              </p>
-
-              <p>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia Curae; Donec velit neque, auctor sit amet
-                aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi,
-                pretium ut lacinia in, elementum id enim. Pellentesque in ipsum
-                id orci porta dapibus. Vivamus magna justo, lacinia eget
-                consectetur sed, convallis at tellus. Cras ultricies ligula sed
-                magna dictum porta. Curabitur non nulla sit amet nisl tempus
-                convallis quis ac lectus.
-              </p>
-
-              <p>
-                Curabitur aliquet quam id dui posuere blandit. Curabitur non
-                nulla sit amet nisl tempus convallis quis ac lectus. Cras
-                ultricies ligula sed magna dictum porta. Nulla quis lorem ut
-                libero malesuada feugiat. Proin eget tortor risus. Sed porttitor
-                lectus nibh.
-              </p>
-
-              <p>
-                Pellentesque in ipsum id orci porta dapibus. Mauris blandit
-                aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu
-                erat, accumsan id imperdiet et, porttitor at sem. Vivamus
-                suscipit tortor eget felis porttitor volutpat. Curabitur arcu
-                erat, accumsan id imperdiet et, porttitor at sem. Pellentesque
-                in ipsum id orci porta dapibus.
-              </p>
-              <p>
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Vivamus magna justo, lacinia eget consectetur sed,
-                convallis at tellus. Cras ultricies ligula sed magna dictum
-                porta. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia Curae; Donec velit neque, auctor sit
-                amet aliquam vel, ullamcorper sit amet ligula. Quisque velit
-                nisi, pretium ut lacinia in, elementum id enim. Pellentesque in
-                ipsum id orci porta dapibus.
-              </p>
-
-              <p>
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                posuere cubilia Curae; Donec velit neque, auctor sit amet
-                aliquam vel, ullamcorper sit amet ligula. Quisque velit nisi,
-                pretium ut lacinia in, elementum id enim. Pellentesque in ipsum
-                id orci porta dapibus. Vivamus magna justo, lacinia eget
-                consectetur sed, convallis at tellus. Cras ultricies ligula sed
-                magna dictum porta. Curabitur non nulla sit amet nisl tempus
-                convallis quis ac lectus.
-              </p>
-
-              <p>
-                Curabitur aliquet quam id dui posuere blandit. Curabitur non
-                nulla sit amet nisl tempus convallis quis ac lectus. Cras
-                ultricies ligula sed magna dictum porta. Nulla quis lorem ut
-                libero malesuada feugiat. Proin eget tortor risus. Sed porttitor
-                lectus nibh.
-              </p>
-
-              <p>
-                Pellentesque in ipsum id orci porta dapibus. Mauris blandit
-                aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu
-                erat, accumsan id imperdiet et, porttitor at sem. Vivamus
-                suscipit tortor eget felis porttitor volutpat. Curabitur arcu
-                erat, accumsan id imperdiet et, porttitor at sem. Pellentesque
-                in ipsum id orci porta dapibus.
-              </p>
-              <p>
-                Curabitur non nulla sit amet nisl tempus convallis quis ac
-                lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                convallis a pellentesque nec, egestas non nisi. Cras ultricies
-                ligula sed magna dictum porta.
-              </p>
-
-              <p>
-                Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id
-                orci porta dapibus. Quisque velit nisi, pretium ut lacinia in,
-                elementum id enim. Vestibulum ante ipsum primis in faucibus orci
-                luctus et ultrices posuere cubilia Curae; Donec velit neque,
-                auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-
-              <p>
-                Nulla quis lorem ut libero malesuada feugiat. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Donec velit neque, auctor sit amet aliquam vel,
-                ullamcorper sit amet ligula. Curabitur aliquet quam id dui
-                posuere blandit. Nulla quis lorem ut libero malesuada feugiat.
-                Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
-                accumsan tincidunt.
-              </p>
-
-              <p>
-                Praesent sapien massa, convallis a pellentesque nec, egestas non
-                nisi. Quisque velit nisi, pretium ut lacinia in, elementum id
-                enim. Nulla porttitor accumsan tincidunt. Quisque velit nisi,
-                pretium ut lacinia in, elementum id enim. Quisque velit nisi,
-                pretium ut lacinia in, elementum id enim. Nulla porttitor
-                accumsan tincidunt.
-              </p>
+              <Card
+                v-for="item in portfolioData.gameportfolio"
+                :key="item.title"
+                :title="item.title"
+                :image="item.img"
+                :url="item.url"
+                :text="item.text"
+              />
             </div>
             <div v-else-if="index == 2" class="portContent">
               <a :id="index" class="anchor" :name="header" />
-              <p>
-                Curabitur non nulla sit amet nisl tempus convallis quis ac
-                lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Curabitur aliquet quam id dui posuere blandit. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Praesent sapien massa,
-                convallis a pellentesque nec, egestas non nisi. Cras ultricies
-                ligula sed magna dictum porta.
-              </p>
-
-              <p>
-                Nulla porttitor accumsan tincidunt. Pellentesque in ipsum id
-                orci porta dapibus. Quisque velit nisi, pretium ut lacinia in,
-                elementum id enim. Vestibulum ante ipsum primis in faucibus orci
-                luctus et ultrices posuere cubilia Curae; Donec velit neque,
-                auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                Vivamus magna justo, lacinia eget consectetur sed, convallis at
-                tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-
-              <p>
-                Nulla quis lorem ut libero malesuada feugiat. Vestibulum ante
-                ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                Curae; Donec velit neque, auctor sit amet aliquam vel,
-                ullamcorper sit amet ligula. Curabitur aliquet quam id dui
-                posuere blandit. Nulla quis lorem ut libero malesuada feugiat.
-                Pellentesque in ipsum id orci porta dapibus. Nulla porttitor
-                accumsan tincidunt.
-              </p>
-
-              <p>
-                Praesent sapien massa, convallis a pellentesque nec, egestas non
-                nisi. Quisque velit nisi, pretium ut lacinia in, elementum id
-                enim. Nulla porttitor accumsan tincidunt. Quisque velit nisi,
-                pretium ut lacinia in, elementum id enim. Quisque velit nisi,
-                pretium ut lacinia in, elementum id enim. Nulla porttitor
-                accumsan tincidunt.
-              </p>
+              <Card
+                v-for="item in portfolioData.projectportfolio"
+                :key="item.title"
+                :title="item.title"
+                :image="item.img"
+                :url="item.url"
+                :text="item.text"
+              />
             </div>
           </template>
         </FullPanel>

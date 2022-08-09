@@ -56,6 +56,9 @@ p {
   font-family: "Nunito", monospace;
   color: var(--text-color);
 }
+blockquote i {
+  color: var(--primary-color);
+}
 
 .p-button {
   border-radius: 0 !important;
